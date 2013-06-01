@@ -88,6 +88,7 @@
             this.matrizMenos.TabIndex = 0;
             this.matrizMenos.Text = "Matriz - Matriz";
             this.matrizMenos.UseVisualStyleBackColor = false;
+            this.matrizMenos.CheckedChanged += new System.EventHandler(this.matrizMenos_CheckedChanged);
             // 
             // label1
             // 
@@ -113,6 +114,7 @@
             this.matrizVezes.TabIndex = 6;
             this.matrizVezes.Text = "Matriz x Matriz";
             this.matrizVezes.UseVisualStyleBackColor = false;
+            this.matrizVezes.CheckedChanged += new System.EventHandler(this.matrizVezes_CheckedChanged);
             // 
             // matrizNumeral
             // 
@@ -140,6 +142,7 @@
             this.matrizSoma.TabIndex = 9;
             this.matrizSoma.Text = "Matriz + Matriz";
             this.matrizSoma.UseVisualStyleBackColor = false;
+            this.matrizSoma.CheckedChanged += new System.EventHandler(this.matrizSoma_CheckedChanged);
             // 
             // matrizTransposta
             // 
@@ -153,6 +156,7 @@
             this.matrizTransposta.TabIndex = 10;
             this.matrizTransposta.Text = "Matriz Transposta";
             this.matrizTransposta.UseVisualStyleBackColor = false;
+            this.matrizTransposta.CheckedChanged += new System.EventHandler(this.matrizTransposta_CheckedChanged);
             // 
             // Determinante
             // 
@@ -298,6 +302,7 @@
             this.matrizOposta.TabIndex = 58;
             this.matrizOposta.Text = "Matriz Oposta";
             this.matrizOposta.UseVisualStyleBackColor = false;
+            this.matrizOposta.CheckedChanged += new System.EventHandler(this.matrizOposta_CheckedChanged);
             // 
             // textBox1
             // 
@@ -394,6 +399,7 @@
             this.matrizInversa.TabIndex = 84;
             this.matrizInversa.Text = "Matriz Inversa";
             this.matrizInversa.UseVisualStyleBackColor = false;
+            this.matrizInversa.CheckedChanged += new System.EventHandler(this.matrizInversa_CheckedChanged);
             // 
             // bt1
             // 

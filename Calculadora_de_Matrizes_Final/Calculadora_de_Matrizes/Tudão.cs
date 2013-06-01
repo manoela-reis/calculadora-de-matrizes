@@ -20,6 +20,7 @@ namespace Jogo_Hamilton
         private int textBoxSize = 30;
         private int contadorDeColunas = 0;
         private bool checkboxMudou = true;
+        private int counter;
 
         public Calculadora()
         {
@@ -81,187 +82,7 @@ namespace Jogo_Hamilton
 
                         }
 
-            // matriz + matriz
-            if (matrizSoma.Checked == true)
-            {
-                matrizNumeral.Enabled = false;
-                matrizMenos.Enabled = false;
-                matrizOposta.Enabled = false;
-                matrizSoma.Enabled = false;
-                matrizTransposta.Enabled = false;
-                matrizVezes.Enabled = false;
-                Determinante.Enabled = false;
-                criar.Enabled = false;
-                matrizInversa.Enabled = false;
-
-                bt1.Enabled = true;
-                bt2.Enabled = true;
-                bt3.Enabled = true;
-                bt4.Enabled = true;
-                bt5.Enabled = true;
-                bt6.Enabled = true;
-                bt7.Enabled = true;
-                bt8.Enabled = true;
-
-                bt1.Visible = true;
-                bt2.Visible = true;
-                bt3.Visible = true;
-                bt4.Visible = true;
-                bt5.Visible = true;
-                bt6.Visible = true;
-                bt7.Visible = true;
-                bt8.Visible = true;
-                bt9.Visible = false;
-                bt10.Visible = false;
-                bt11.Visible = false;
-                mais.Visible = true;
-            }
-
-
-            // matriz - matriz
-            if (matrizMenos.Checked == true)
-            {
-
-                matrizNumeral.Enabled = false;
-                matrizMenos.Enabled = false;
-                matrizSoma.Enabled = false;
-                matrizTransposta.Enabled = false;
-                matrizVezes.Enabled = false;
-                matrizOposta.Enabled = false;
-                Determinante.Enabled = false;
-                criar.Enabled = false;
-                matrizInversa.Enabled = false;
-
-                bt1.Visible = true;
-                bt2.Visible = true;
-                bt3.Visible = true;
-                bt4.Visible = true;
-                bt5.Visible = true;
-                bt6.Visible = true;
-                bt7.Visible = true;
-                bt8.Visible = true;
-                bt9.Visible = false;
-                bt10.Visible = false;
-                bt11.Visible = false;
-                menos.Visible = true;
-
-                bt1.Enabled = true;
-                bt2.Enabled = true;
-                bt3.Enabled = true;
-                bt4.Enabled = true;
-                bt5.Enabled = true;
-                bt6.Enabled = true;
-                bt7.Enabled = true;
-                bt8.Enabled = true;
-
-
-
-            }
-
-            // matriz x matriz
-            if (matrizVezes.Checked == true)
-            {
-                matrizNumeral.Enabled = false;
-                matrizMenos.Enabled = false;
-                matrizSoma.Enabled = false;
-                matrizOposta.Enabled = false;
-                matrizTransposta.Enabled = false;
-                matrizVezes.Enabled = false;
-                Determinante.Enabled = false;
-                criar.Enabled = false;
-                matrizInversa.Enabled = false;
-
-
-                bt1.Visible = true;
-                bt2.Visible = true;
-                bt3.Visible = true;
-                bt4.Visible = true;
-                bt5.Visible = true;
-                bt6.Visible = true;
-                bt7.Visible = true;
-                bt8.Visible = true;
-                bt9.Visible = false;
-                bt10.Visible = false;
-                bt11.Visible = false;
-
-                multiplicacao.Visible = true;
-
-                bt1.Enabled = true;
-                bt2.Enabled = true;
-                bt3.Enabled = true;
-                bt4.Enabled = true;
-                bt5.Enabled = true;
-                bt6.Enabled = true;
-                bt7.Enabled = true;
-                bt8.Enabled = true;
-
-            }
-            //matriz x numeral
-
-            if (matrizNumeral.Checked == true)
-            {
-                matrizNumeral.Enabled = false;
-                matrizMenos.Enabled = false;
-                matrizSoma.Enabled = false;
-                matrizTransposta.Enabled = false;
-                matrizOposta.Enabled = false;
-                matrizVezes.Enabled = false;
-                Determinante.Enabled = false;
-                //criar.Enabled = false;
-                matrizInversa.Enabled = false;
-
-                //bt1.Visible = true;
-                //bt2.Visible = true;
-                //bt3.Visible = true;
-                //bt4.Visible = true;
-                //bt9.Visible = true;
-
-                primeiro.Visible = true;
-                segundo.Visible = true;
-                multiplicacao.Visible = true;
-
-                primeiro.Enabled = true;
-                segundo.Enabled = true;
-                //bt1.Enabled = true;
-                //bt2.Enabled = true;
-                //bt3.Enabled = true;
-                //bt4.Enabled = true;
-                //bt5.Enabled = true;
-                //bt6.Enabled = true;
-                //bt7.Enabled = true;
-                //bt8.Enabled = true;
-
-
-            }
-
-            // Transposta
-            if (matrizTransposta.Checked == true)
-            {
-                matrizNumeral.Enabled = false;
-                matrizMenos.Enabled = false;
-                matrizSoma.Enabled = false;
-                matrizOposta.Enabled = false;
-                matrizTransposta.Enabled = false;
-                matrizVezes.Enabled = false;
-                Determinante.Enabled = false;
-                criar.Enabled = false;
-                matrizInversa.Enabled = false;
-
-                bt1.Visible = true;
-                bt2.Visible = true;
-                bt3.Visible = true;
-                bt4.Visible = true;
-
-                bt1.Enabled = true;
-                bt2.Enabled = true;
-                bt3.Enabled = true;
-                bt4.Enabled = true;
-                bt5.Enabled = true;
-                bt6.Enabled = true;
-                bt7.Enabled = true;
-                bt8.Enabled = true;
-
-            }
+            
 
             // Determinante
             if (Determinante.Checked == true)
@@ -290,64 +111,7 @@ namespace Jogo_Hamilton
                 bt7.Enabled = true;
                 bt8.Enabled = true;
             }
-            //Oposta
-            if (matrizOposta.Checked == true)
-            {
-                matrizNumeral.Enabled = false;
-                matrizMenos.Enabled = false;
-                matrizSoma.Enabled = false;
-                matrizOposta.Enabled = false;
-                matrizTransposta.Enabled = false;
-                matrizVezes.Enabled = false;
-                Determinante.Enabled = false;
-                criar.Enabled = false;
-                matrizInversa.Enabled = false;
-
-                bt1.Visible = true;
-                bt2.Visible = true;
-                bt3.Visible = true;
-                bt4.Visible = true;
-
-                bt1.Enabled = true;
-                bt2.Enabled = true;
-                bt3.Enabled = true;
-                bt4.Enabled = true;
-                bt5.Enabled = true;
-                bt6.Enabled = true;
-                bt7.Enabled = true;
-                bt8.Enabled = true;
-
-            }
-            //Inversa
-            if (matrizInversa.Checked == true)
-            {
-                matrizNumeral.Enabled = false;
-                matrizMenos.Enabled = false;
-                matrizSoma.Enabled = false;
-                matrizOposta.Enabled = false;
-                matrizTransposta.Enabled = false;
-                matrizVezes.Enabled = false;
-                Determinante.Enabled = false;
-                criar.Enabled = false;
-                matrizInversa.Enabled = false;
-
-                bt1.Visible = true;
-                bt2.Visible = true;
-                bt3.Visible = true;
-                bt4.Visible = true;
-
-                bt1.Enabled = true;
-                bt2.Enabled = true;
-                bt3.Enabled = true;
-                bt4.Enabled = true;
-                
-
-            }
-
-
-
-
-
+            
         }
 
         private void limpar_CheckedChanged(object sender, EventArgs e)
@@ -799,18 +563,20 @@ namespace Jogo_Hamilton
 
         }
 
-        void Clear()
+       public void Clear()
         {
-            for (int i = 0; i <= linhas - 1; i++)
+            for (int i = 0; i < linhas; i++)
             {
-                for (int w = 0; w <= colunas - 1; w++)
+                for (int w = 0; w < colunas; w++)
                 {
                     textBoxes[i, w].Text = "";
-                    //primeiro.Text = "";
-                    //segundo.Text = "";
-                    criar.Checked = false;
+                    counter++;
+                    Console.WriteLine("ENTROU NO LIMPAR" + counter);
                 }
             }
+            primeiro.Text = "";
+            segundo.Text = "";
+            criar.Checked = false;
         }
 
         public void CreateMatriz() {
@@ -888,6 +654,237 @@ namespace Jogo_Hamilton
                 //bt7.Enabled = true;
                 //bt8.Enabled = true;
 
+        }
+
+        private void matrizSoma_CheckedChanged(object sender, EventArgs e)
+        {
+            // matriz + matriz
+          
+                matrizNumeral.Enabled = false;
+                matrizMenos.Enabled = false;
+                matrizOposta.Enabled = false;
+                matrizSoma.Enabled = false;
+                matrizTransposta.Enabled = false;
+                matrizVezes.Enabled = false;
+                Determinante.Enabled = false;
+                //criar.Enabled = false;
+                matrizInversa.Enabled = false;
+
+                //bt1.Enabled = true;
+                //bt2.Enabled = true;
+                //bt3.Enabled = true;
+                //bt4.Enabled = true;
+                //bt5.Enabled = true;
+                //bt6.Enabled = true;
+                //bt7.Enabled = true;
+                primeiro.Visible = true;
+                segundo.Visible = true;
+                mais.Visible = true;
+             
+                primeiro.Enabled = true;
+                segundo.Enabled = true;
+
+
+                //bt1.Visible = true;
+                //bt2.Visible = true;
+                //bt3.Visible = true;
+                //bt4.Visible = true;
+                //bt5.Visible = true;
+                //bt6.Visible = true;
+                //bt7.Visible = true;
+                //bt8.Visible = true;
+                //bt9.Visible = false;
+                //bt10.Visible = false;
+                //bt11.Visible = false;
+            
+            
+        }
+
+        private void matrizMenos_CheckedChanged(object sender, EventArgs e)
+        {
+            // matriz - matriz
+           
+                matrizNumeral.Enabled = false;
+                matrizMenos.Enabled = false;
+                matrizSoma.Enabled = false;
+                matrizTransposta.Enabled = false;
+                matrizVezes.Enabled = false;
+                matrizOposta.Enabled = false;
+                Determinante.Enabled = false;
+                //criar.Enabled = false;
+                matrizInversa.Enabled = false;
+
+                //bt1.Visible = true;
+                //bt2.Visible = true;
+                //bt3.Visible = true;
+                //bt4.Visible = true;
+                //bt5.Visible = true;
+                //bt6.Visible = true;
+                //bt7.Visible = true;
+                //bt8.Visible = true;
+                //bt9.Visible = false;
+                //bt10.Visible = false;
+                //bt11.Visible = false;               
+                primeiro.Visible = true;
+                segundo.Visible = true;
+                menos.Visible = true;
+
+                primeiro.Enabled = true;
+                segundo.Enabled = true;
+
+                //bt1.Enabled = true;
+                //bt2.Enabled = true;
+                //bt3.Enabled = true;
+                //bt4.Enabled = true;
+                //bt5.Enabled = true;
+                //bt6.Enabled = true;
+                //bt7.Enabled = true;
+                //bt8.Enabled = true;
+
+        }
+
+        private void matrizVezes_CheckedChanged(object sender, EventArgs e)
+        {
+            // matriz x matriz
+           
+                matrizNumeral.Enabled = false;
+                matrizMenos.Enabled = false;
+                matrizSoma.Enabled = false;
+                matrizOposta.Enabled = false;
+                matrizTransposta.Enabled = false;
+                matrizVezes.Enabled = false;
+                Determinante.Enabled = false;
+                //criar.Enabled = false;
+                matrizInversa.Enabled = false;
+
+
+                //bt1.Visible = true;
+                //bt2.Visible = true;
+                //bt3.Visible = true;
+                //bt4.Visible = true;
+                //bt5.Visible = true;
+                //bt6.Visible = true;
+                //bt7.Visible = true;
+                //bt8.Visible = true;
+                //bt9.Visible = false;
+                //bt10.Visible = false;
+                //bt11.Visible = false;
+                primeiro.Visible = true;
+                segundo.Visible = true;
+                multiplicacao.Visible = true;
+
+                primeiro.Enabled = true;
+                segundo.Enabled = true;
+                
+                //bt1.Enabled = true;
+                //bt2.Enabled = true;
+                //bt3.Enabled = true;
+                //bt4.Enabled = true;
+                //bt5.Enabled = true;
+                //bt6.Enabled = true;
+                //bt7.Enabled = true;
+                //bt8.Enabled = true;
+        }
+
+        private void matrizTransposta_CheckedChanged(object sender, EventArgs e)
+        {
+            // Transposta
+           
+                matrizNumeral.Enabled = false;
+                matrizMenos.Enabled = false;
+                matrizSoma.Enabled = false;
+                matrizOposta.Enabled = false;
+                matrizTransposta.Enabled = false;
+                matrizVezes.Enabled = false;
+                Determinante.Enabled = false;
+                //criar.Enabled = false;
+                matrizInversa.Enabled = false;
+
+                //bt1.Visible = true;
+                //bt2.Visible = true;
+                //bt3.Visible = true;
+                //bt4.Visible = true;
+
+                primeiro.Visible = true;
+                segundo.Visible = true;
+                
+                primeiro.Enabled = true;
+                segundo.Enabled = true;
+
+                //bt1.Enabled = true;
+                //bt2.Enabled = true;
+                //bt3.Enabled = true;
+                //bt4.Enabled = true;
+                //bt5.Enabled = true;
+                //bt6.Enabled = true;
+                //bt7.Enabled = true;
+                //bt8.Enabled = true;
+        }
+
+        private void matrizOposta_CheckedChanged(object sender, EventArgs e)
+        {
+            //Oposta
+           
+                matrizNumeral.Enabled = false;
+                matrizMenos.Enabled = false;
+                matrizSoma.Enabled = false;
+                matrizOposta.Enabled = false;
+                matrizTransposta.Enabled = false;
+                matrizVezes.Enabled = false;
+                Determinante.Enabled = false;
+                //criar.Enabled = false;
+                matrizInversa.Enabled = false;
+
+                //bt1.Visible = true;
+                //bt2.Visible = true;
+                //bt3.Visible = true;
+                //bt4.Visible = true;
+
+                primeiro.Visible = true;
+                segundo.Visible = true;
+
+                primeiro.Enabled = true;
+                segundo.Enabled = true;
+
+                //bt1.Enabled = true;
+                //bt2.Enabled = true;
+                //bt3.Enabled = true;
+                //bt4.Enabled = true;
+                //bt5.Enabled = true;
+                //bt6.Enabled = true;
+                //bt7.Enabled = true;
+                //bt8.Enabled = true;
+        }
+
+        private void matrizInversa_CheckedChanged(object sender, EventArgs e)
+        {
+            //Inversa
+           
+                matrizNumeral.Enabled = false;
+                matrizMenos.Enabled = false;
+                matrizSoma.Enabled = false;
+                matrizOposta.Enabled = false;
+                matrizTransposta.Enabled = false;
+                matrizVezes.Enabled = false;
+                Determinante.Enabled = false;
+                //criar.Enabled = false;
+                matrizInversa.Enabled = false;
+
+                //bt1.Visible = true;
+                //bt2.Visible = true;
+                //bt3.Visible = true;
+                //bt4.Visible = true;
+
+                primeiro.Visible = true;
+                segundo.Visible = true;
+
+                primeiro.Enabled = true;
+                segundo.Enabled = true;
+
+                //bt1.Enabled = true;
+                //bt2.Enabled = true;
+                //bt3.Enabled = true;
+                //bt4.Enabled = true;
         }
 
     }        
