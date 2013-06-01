@@ -1,0 +1,43 @@
+C:\Users\cidneia\Desktop\Calculadora_1.4\Calculadora_de_Matrizes\bin\Release\Calculadora_de_Matrizes.exe
+C:\Users\cidneia\Desktop\Calculadora_1.4\Calculadora_de_Matrizes\bin\Release\Calculadora_de_Matrizes.pdb
+C:\Users\cidneia\Desktop\Calculadora_1.4\Calculadora_de_Matrizes\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\cidneia\Desktop\Calculadora_1.4\Calculadora_de_Matrizes\obj\x86\Release\Jogo_Hamilton.Calculadora.resources
+C:\Users\cidneia\Desktop\Calculadora_1.4\Calculadora_de_Matrizes\obj\x86\Release\Jogo_Hamilton.Properties.Resources.resources
+C:\Users\cidneia\Desktop\Calculadora_1.4\Calculadora_de_Matrizes\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\cidneia\Desktop\Calculadora_1.4\Calculadora_de_Matrizes\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\cidneia\Desktop\Calculadora_1.4\Calculadora_de_Matrizes\obj\x86\Release\Calculadora_de_Matrizes.exe
+C:\Users\cidneia\Desktop\Calculadora_1.4\Calculadora_de_Matrizes\obj\x86\Release\Calculadora_de_Matrizes.pdb
+C:\Users\cidneia\Desktop\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Calculadora_de_Matrizes.exe
+C:\Users\cidneia\Desktop\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Calculadora_de_Matrizes.pdb
+C:\Users\TEMP.NAVE.010\Downloads\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Calculadora_de_Matrizes.exe
+C:\Users\TEMP.NAVE.010\Downloads\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Calculadora_de_Matrizes.pdb
+C:\Users\TEMP.NAVE.010\Downloads\Calculadora_1.5\Calculadora_de_Matrizes\bin\Release\Calculadora_de_Matrizes.exe
+C:\Users\TEMP.NAVE.010\Downloads\Calculadora_1.5\Calculadora_de_Matrizes\bin\Release\Calculadora_de_Matrizes.pdb
+C:\Users\TEMP.NAVE.010\Downloads\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\TEMP.NAVE.010\Downloads\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Jogo_Hamilton.Calculadora.resources
+C:\Users\TEMP.NAVE.010\Downloads\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Jogo_Hamilton.Properties.Resources.resources
+C:\Users\TEMP.NAVE.010\Downloads\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\TEMP.NAVE.010\Downloads\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Manoela Barreto\Downloads\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Calculadora_de_Matrizes.exe
+C:\Users\Manoela Barreto\Downloads\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Calculadora_de_Matrizes.pdb
+C:\Users\Manoela Barreto\Desktop\Calculadora_1.5\Calculadora_de_Matrizes\bin\Release\Calculadora_de_Matrizes.exe.manifest
+C:\Users\Manoela Barreto\Desktop\Calculadora_1.5\Calculadora_de_Matrizes\bin\Release\Calculadora_de_Matrizes.application
+C:\Users\Manoela Barreto\Desktop\Calculadora_1.5\Calculadora_de_Matrizes\bin\Release\Calculadora_de_Matrizes.exe
+C:\Users\Manoela Barreto\Desktop\Calculadora_1.5\Calculadora_de_Matrizes\bin\Release\Calculadora_de_Matrizes.pdb
+C:\Users\Manoela Barreto\Desktop\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Manoela Barreto\Desktop\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Jogo_Hamilton.Properties.Resources.resources
+C:\Users\Manoela Barreto\Desktop\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Jogo_Hamilton.Calculadora.resources
+C:\Users\Manoela Barreto\Desktop\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Manoela Barreto\Desktop\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Manoela Barreto\Desktop\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Calculadora_de_Matrizes.exe.manifest
+C:\Users\Manoela Barreto\Desktop\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Calculadora_de_Matrizes.application
+C:\Users\Manoela Barreto\Desktop\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Calculadora_de_Matrizes.exe
+C:\Users\Manoela Barreto\Desktop\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Calculadora_de_Matrizes.pdb
+C:\Documents and Settings\THYAGO\Desktop\hehe\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\THYAGO\Desktop\hehe\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Jogo_Hamilton.Calculadora.resources
+C:\Documents and Settings\THYAGO\Desktop\hehe\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\THYAGO\Desktop\hehe\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\THYAGO\Desktop\hehe\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Calculadora_de_Matrizes.exe
+C:\Documents and Settings\THYAGO\Desktop\hehe\Calculadora_1.5\Calculadora_de_Matrizes\obj\x86\Release\Calculadora_de_Matrizes.pdb
+C:\Users\Manoela Barreto\Desktop\Coisas do thyago e minhas\PROJETOS_2012\OUTROS\Projeto_CalculadoraDeMatrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\obj\x86\Release\Calculadora_de_Matrizes.exe
+C:\Users\Manoela Barreto\Desktop\Coisas do thyago e minhas\PROJETOS_2012\OUTROS\Projeto_CalculadoraDeMatrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\obj\x86\Release\Calculadora_de_Matrizes.pdb
