@@ -19,12 +19,15 @@ namespace Jogo_Hamilton
         private int espacoIntervaloY = 0;
         private int textBoxSize = 30;
         private int contadorDeColunas = 0;
-        private bool checkboxMudou = true;
-        private int counter;
+        private bool checkboxMudou = true;     
 
         public Calculadora()
         {
-            InitializeComponent();            
+            InitializeComponent();
+
+            criar.Enabled = false;
+            calcular.Enabled = false;
+            limpar.Enabled = false;
         }
 
         private void criar_CheckedChanged(object sender, EventArgs e)
@@ -56,9 +59,8 @@ namespace Jogo_Hamilton
                         || listaTesteMatriz[0] == true && listaTesteMatriz[3] == true || listaTesteMatriz[0] == true && listaTesteMatriz[4] == true || listaTesteMatriz[0] == true && listaTesteMatriz[5] == true
                         || listaTesteMatriz[0] == true && listaTesteMatriz[6] == true)
                         
-                        
-                //matriz.Checked == true && Determinante.Checked == true  )
-                {
+      
+                    {
 
                     MessageBox.Show("Você não pode selecionar mais de uma matriz ao mesmo tempo", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -73,7 +75,7 @@ namespace Jogo_Hamilton
                     matrizOposta.Checked = false;
                     matrizInversa.Checked = false;
 
-                }
+                    }
 
                         if (checkboxMudou == true)
                         {
@@ -570,8 +572,8 @@ namespace Jogo_Hamilton
                 for (int w = 0; w < colunas; w++)
                 {
                     textBoxes[i, w].Text = "";
-                    counter++;
-                    Console.WriteLine("ENTROU NO LIMPAR" + counter);
+                    
+                    Console.WriteLine("ENTROU NO LIMPAR");
                 }
             }
             primeiro.Text = "";
@@ -630,7 +632,9 @@ namespace Jogo_Hamilton
                 matrizOposta.Enabled = false;
                 matrizVezes.Enabled = false;
                 Determinante.Enabled = false;
-                //criar.Enabled = false;
+                criar.Enabled = true;
+                limpar.Enabled = true;
+
                 matrizInversa.Enabled = false;
 
                 //bt1.Visible = true;
@@ -667,7 +671,9 @@ namespace Jogo_Hamilton
                 matrizTransposta.Enabled = false;
                 matrizVezes.Enabled = false;
                 Determinante.Enabled = false;
-                //criar.Enabled = false;
+                criar.Enabled = true;
+                limpar.Enabled = true;
+                
                 matrizInversa.Enabled = false;
 
                 //bt1.Enabled = true;
@@ -711,8 +717,9 @@ namespace Jogo_Hamilton
                 matrizVezes.Enabled = false;
                 matrizOposta.Enabled = false;
                 Determinante.Enabled = false;
-                //criar.Enabled = false;
+                criar.Enabled = true;
                 matrizInversa.Enabled = false;
+                limpar.Enabled = true;
 
                 //bt1.Visible = true;
                 //bt2.Visible = true;
@@ -754,8 +761,9 @@ namespace Jogo_Hamilton
                 matrizTransposta.Enabled = false;
                 matrizVezes.Enabled = false;
                 Determinante.Enabled = false;
-                //criar.Enabled = false;
+                criar.Enabled = true;
                 matrizInversa.Enabled = false;
+                limpar.Enabled = true;
 
 
                 //bt1.Visible = true;
@@ -797,9 +805,9 @@ namespace Jogo_Hamilton
                 matrizTransposta.Enabled = false;
                 matrizVezes.Enabled = false;
                 Determinante.Enabled = false;
-                //criar.Enabled = false;
+                criar.Enabled = true;
                 matrizInversa.Enabled = false;
-
+                limpar.Enabled = true;
                 //bt1.Visible = true;
                 //bt2.Visible = true;
                 //bt3.Visible = true;
@@ -832,9 +840,9 @@ namespace Jogo_Hamilton
                 matrizTransposta.Enabled = false;
                 matrizVezes.Enabled = false;
                 Determinante.Enabled = false;
-                //criar.Enabled = false;
+                criar.Enabled = true;
                 matrizInversa.Enabled = false;
-
+                limpar.Enabled = true;
                 //bt1.Visible = true;
                 //bt2.Visible = true;
                 //bt3.Visible = true;
@@ -867,7 +875,8 @@ namespace Jogo_Hamilton
                 matrizTransposta.Enabled = false;
                 matrizVezes.Enabled = false;
                 Determinante.Enabled = false;
-                //criar.Enabled = false;
+                criar.Enabled = true;
+                limpar.Enabled = true;
                 matrizInversa.Enabled = false;
 
                 //bt1.Visible = true;
