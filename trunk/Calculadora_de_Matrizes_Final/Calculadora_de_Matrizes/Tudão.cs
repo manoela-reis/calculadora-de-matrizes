@@ -81,6 +81,7 @@ namespace Jogo_Hamilton
                         {
                             checkboxMudou = false;
                             CreateMatriz();
+                            calcular.Enabled = true;
 
                         }
 
@@ -120,87 +121,58 @@ namespace Jogo_Hamilton
         {
             Clear();
 
-            bt1.Visible = false;
-            bt2.Visible = false;
-            bt3.Visible = false;
-            bt4.Visible = false;
-            bt5.Visible = false;
-            bt6.Visible = false;
-            bt7.Visible = false;
-            bt8.Visible = false;
-            bt9.Visible = false;
-            bt10.Visible = false;
-            bt11.Visible = false;
-            textBox2.Visible = false;
-            textBox4.Visible = false;
-            textBox3.Visible = false;
-            bt8.Visible = false;
-            textBox9.Visible = false;
-            textBox8.Visible = false;
-            textBox7.Visible = false;
-            textBox6.Visible = false;
+            //bt1.Visible = false;
+            //bt2.Visible = false;
+            //bt3.Visible = false;
+            //bt4.Visible = false;
+            //bt5.Visible = false;
+            //bt6.Visible = false;
+            //bt7.Visible = false;
+            //bt8.Visible = false;
+            //bt9.Visible = false;
+            //bt10.Visible = false;
+            //bt11.Visible = false;
+            //textBox2.Visible = false;
+            //textBox4.Visible = false;
+            //textBox3.Visible = false;
+            //bt8.Visible = false;
+            //textBox9.Visible = false;
+            //textBox8.Visible = false;
+            //textBox7.Visible = false;
+            //textBox6.Visible = false;
 
-            bt1.Text = "";
-            bt2.Text = "";
-            bt3.Text = "";
-            bt4.Text = "";
-            bt5.Text = "";
-            bt6.Text = "";
-            bt7.Text = "";
-            bt8.Text = "";
-            bt9.Text = "";
-            bt10.Text = "";
-            bt11.Text = "";
-            textBox2.Text = "";
-            textBox4.Text = "";
-            textBox3.Text = "";
-            bt8.Text = "";
-            textBox9.Text = "";
-            textBox8.Text = "";
-            textBox7.Text = "";
-            textBox6.Text = "";
+            //bt1.Text = "";
+            //bt2.Text = "";
+            //bt3.Text = "";
+            //bt4.Text = "";
+            //bt5.Text = "";
+            //bt6.Text = "";
+            //bt7.Text = "";
+            //bt8.Text = "";
+            //bt9.Text = "";
+            //bt10.Text = "";
+            //bt11.Text = "";
+            //textBox2.Text = "";
+            //textBox4.Text = "";
+            //textBox3.Text = "";
+            //bt8.Text = "";
+            //textBox9.Text = "";
+            //textBox8.Text = "";
+            //textBox7.Text = "";
+            //textBox6.Text = "";
 
-            res1.Visible = false;
-            res2.Visible = false;
-            res3.Visible = false;
-            res4.Visible = false;
-            res5.Visible = false;
+            //res1.Visible = false;
+            //res2.Visible = false;
+            //res3.Visible = false;
+            //res4.Visible = false;
+            //res5.Visible = false;
 
-            res1.Text = "";
-            res2.Text = "";
-            res3.Text = "";
-            res4.Text = "";
-            res5.Text = "";
+            //res1.Text = "";
+            //res2.Text = "";
+            //res3.Text = "";
+            //res4.Text = "";
+            //res5.Text = "";
 
-            matrizSoma.Checked = false;
-            matrizMenos.Checked = false;
-            matrizNumeral.Checked = false;
-            matrizTransposta.Checked = false;
-            matrizVezes.Checked = false;
-            matrizOposta.Checked = false;
-            Determinante.Checked = false;
-            matrizInversa.Checked = false;
-
-            matrizVezes.Enabled = true;
-            matrizNumeral.Enabled = true;
-            matrizSoma.Enabled = true;
-            matrizOposta.Enabled = true;
-            matrizInversa.Enabled = true;
-            matrizTransposta.Enabled = true;
-            matrizMenos.Enabled = true;
-            Determinante.Enabled = true;
-            
-            menos.Visible = false;
-            mais.Visible = false;
-            multiplicacao.Visible = false;
-            igual.Visible = false;
-            igual2.Visible = false;
-
-            limpar.Checked = false;
-            criar.Checked = false;
-            calcular.Checked = false;
-
-            criar.Enabled = true;
         }
 
         private void calcular_CheckedChanged(object sender, EventArgs e)
@@ -578,7 +550,39 @@ namespace Jogo_Hamilton
             }
             primeiro.Text = "";
             segundo.Text = "";
+            primeiro.Visible = false;
+            segundo.Visible = false;
             criar.Checked = false;
+            criar.Enabled = false;
+            calcular.Enabled = false;
+            calcular.Checked = false;
+
+            menos.Visible = false;
+            mais.Visible = false;
+            multiplicacao.Visible = false;
+            igual.Visible = false;
+            igual2.Visible = false;
+
+            matrizSoma.Checked = false;
+            matrizMenos.Checked = false;
+            matrizNumeral.Checked = false;
+            matrizTransposta.Checked = false;
+            matrizVezes.Checked = false;
+            matrizOposta.Checked = false;
+            Determinante.Checked = false;
+            matrizInversa.Checked = false;
+
+            matrizVezes.Enabled = true;
+            matrizNumeral.Enabled = true;
+            matrizSoma.Enabled = true;
+            matrizOposta.Enabled = true;
+            matrizInversa.Enabled = true;
+            matrizTransposta.Enabled = true;
+            matrizMenos.Enabled = true;
+            Determinante.Enabled = true;
+
+            limpar.Enabled = false;
+            limpar.Checked = false;
         }
 
         public void CreateMatriz() {
@@ -619,6 +623,13 @@ namespace Jogo_Hamilton
                     //}
                 }
                 Console.WriteLine("passou pelo criar matriz");
+               
+        }
+
+        
+        public int quantidadeDeMatrizes(int quantidade) {
+
+            return quantidade;
         }
 
         private void matrizNumeral_CheckedChanged(object sender, EventArgs e)
@@ -847,6 +858,8 @@ namespace Jogo_Hamilton
                 //bt2.Visible = true;
                 //bt3.Visible = true;
                 //bt4.Visible = true;
+
+
 
                 primeiro.Visible = true;
                 segundo.Visible = true;
