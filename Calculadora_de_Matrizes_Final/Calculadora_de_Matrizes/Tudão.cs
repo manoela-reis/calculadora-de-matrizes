@@ -17,21 +17,30 @@ namespace Jogo_Hamilton
         public TextBox[,] textBoxes;
         private int espacoIntervaloX = 0;
         private int espacoIntervaloY = 0;
+        private int espacoIntervaloY2 = 0;
         private int textBoxSize = 30;
         private int contadorDeColunas = 0;
         private bool checkboxMudou = true;
         private TextBox[,] textboxesResults;
+        private TextBox[,] textBoxes2;
+        int quantidade = 0;
+        public Label label = new Label();
+        
 
          static private MATRIZES currentMatriz;
+        
 
         public Calculadora()
         {
             InitializeComponent();
+            
 
             criar.Enabled = false;
             calcular.Enabled = false;
             limpar.Enabled = false;
+
         }
+       
 
         private void criar_CheckedChanged(object sender, EventArgs e)
         {
@@ -83,7 +92,7 @@ namespace Jogo_Hamilton
                         if (checkboxMudou == true)
                         {
                             checkboxMudou = false;
-                            CreateMatriz();
+                            CreateResultado();
                             calcular.Enabled = true;
 
                         }
@@ -134,94 +143,51 @@ namespace Jogo_Hamilton
             //Soma
             if (matrizSoma.Checked == true && criar.Checked == true)
             {
-                if (bt1.Text != "" && bt2.Text != "" && bt3.Text != "" && bt4.Text != "" && bt5.Text != "" && bt6.Text != "" && bt7.Text != "" && bt8.Text != "")
-                {
+                    for (int i = 0; i < linhas; i++)
+                    {
+                        for (int j = 0; j < colunas; j++)
+                        {
+                            if (textBoxes[i, j].Text != "" | textBoxes2[i,j].Text != "")
+                           {
+                                Double tempres1 = Convert.ToDouble(textBoxes[i, j].Text) + Convert.ToDouble(textBoxes2[i,j].Text);
 
-                    Double tempres1 = Convert.ToDouble(bt1.Text) + Convert.ToDouble(bt5.Text);
-                    Double tempres2 = Convert.ToDouble(bt2.Text) + Convert.ToDouble(bt6.Text);
-                    Double tempres3 = Convert.ToDouble(bt3.Text) + Convert.ToDouble(bt7.Text);
-                    Double tempres4 = Convert.ToDouble(bt4.Text) + Convert.ToDouble(bt8.Text);
+                                textboxesResults[i, j].Visible = true;
+                                textboxesResults[i, j].Text = tempres1.ToString();
+                           }
 
-                    res1.Visible = true;
-                    res2.Visible = true;
-                    res3.Visible = true;
-                    res4.Visible = true;
+                           else
+                            {
+                                MessageBox.Show("Preencha todos os espaços da matriz.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                calcular.Checked = false;
+                           }
 
-                    res1.Text = tempres1.ToString();
-                    res2.Text = tempres2.ToString();
-                    res3.Text = tempres3.ToString();
-                    res4.Text = tempres4.ToString();
-
-
-                    bt1.Enabled = false;
-                    bt2.Enabled = false;
-                    bt3.Enabled = false;
-                    bt4.Enabled = false;
-                    bt5.Enabled = false;
-                    bt6.Enabled = false;
-                    bt7.Enabled = false;
-                    bt8.Enabled = false;
-                    
-                    res1.Enabled = false;
-                    res2.Enabled = false;
-                    res3.Enabled = false;
-                    res4.Enabled = false;
-
-                }
-                if (bt1.Text == "" | bt2.Text == "" | bt3.Text == "" | bt4.Text == "" | bt5.Text == "" | bt6.Text == "" | bt7.Text == "" | bt8.Text == "")
-                {
-                    MessageBox.Show("Preencha todos os espaços da matriz.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    calcular.Checked = false;
-                }
-                    
-                
+                        }
+                    }
             }
 
             //Subtração
             if (matrizMenos.Checked == true && criar.Checked == true)
             {
-                if (bt1.Text != "" && bt2.Text != "" && bt3.Text != "" && bt4.Text != "" && bt5.Text != "" && bt6.Text != "" && bt7.Text != "" && bt8.Text != "")
+                for (int i = 0; i < linhas; i++)
                 {
+                    for (int j = 0; j < colunas; j++)
+                    {
+                        if (textBoxes[i, j].Text != "" | textBoxes[i,j].Text != "")
+                        {
+                            Double tempres1 = Convert.ToDouble(textBoxes[i, j].Text) - Convert.ToDouble(textBoxes2[i,j].Text);
 
-                    Double tempres1 = Convert.ToDouble(bt1.Text) - Convert.ToDouble(bt5.Text);
-                    Double tempres2 = Convert.ToDouble(bt2.Text) - Convert.ToDouble(bt6.Text);
-                    Double tempres3 = Convert.ToDouble(bt3.Text) - Convert.ToDouble(bt7.Text);
-                    Double tempres4 = Convert.ToDouble(bt4.Text) - Convert.ToDouble(bt8.Text);
+                            textboxesResults[i, j].Visible = true;
+                            textboxesResults[i, j].Text = tempres1.ToString();
+                        }
 
-                    textBox9.Visible = true;
-                    textBox8.Visible = true;
-                    textBox7.Visible = true;
-                    textBox6.Visible = true;
+                        else
+                        {
+                            MessageBox.Show("Preencha todos os espaços da matriz.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            calcular.Checked = false;
+                        }
 
-                    textBox9.Text = tempres1.ToString();
-                    textBox7.Text = tempres2.ToString();
-                    textBox8.Text = tempres3.ToString();
-                    textBox6.Text = tempres4.ToString();
-
-                    bt1.Enabled = false;
-                    bt2.Enabled = false;
-                    bt3.Enabled = false;
-                    bt4.Enabled = false;
-                    bt5.Enabled = false;
-                    bt6.Enabled = false;
-                    bt7.Enabled = false;
-                    bt8.Enabled = false;
-
-                    textBox9.Enabled = false;
-                    textBox8.Enabled = false;
-                    textBox7.Enabled = false;
-                    textBox6.Enabled = false;
-
-
+                    }
                 }
-
-                else
-                {
-                    MessageBox.Show("Preencha todos os espaços da matriz.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    calcular.Checked = false;
-
-                }
-
 
             }
             // Matriz x Matriz
@@ -298,43 +264,26 @@ namespace Jogo_Hamilton
             // Transposta
             if (matrizTransposta.Checked == true && criar.Checked == true)
             {
-                if (bt1.Text != "" && bt2.Text != "" && bt3.Text != "" && bt4.Text != "")
+                for (int i = 0; i < linhas; i++)
                 {
-                    bt5.Visible = true;
-                    bt6.Visible = true;
-                    bt7.Visible = true;
-                    bt8.Visible = true;
-                    igual2.Visible = true;
+                    for (int j = 0; j < colunas; j++)
+                    {
+                        if (textBoxes[i, j].Text != "")
+                        {
+                            Double tempres1 = Convert.ToDouble(textBoxes[i, j].Text);
 
-                    Double tempres1 = Convert.ToDouble(bt1.Text);
-                    Double tempres2 = Convert.ToDouble(bt2.Text);
-                    Double tempres3 = Convert.ToDouble(bt3.Text);
-                    Double tempres4 = Convert.ToDouble(bt4.Text);
+                            textboxesResults[i, j].Visible = true;
+                            textboxesResults[j, i].Text = tempres1.ToString();
+                        }
 
-                    bt5.Text = tempres1.ToString();
-                    bt6.Text = tempres3.ToString();
-                    bt7.Text = tempres2.ToString();
-                    bt8.Text = tempres4.ToString();
-                    calcular.Checked = false;
+                        else
+                        {
+                            MessageBox.Show("Preencha todos os espaços da matriz.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            calcular.Checked = false;
+                        }
 
-                    bt5.Enabled = false;
-                    bt6.Enabled = false;
-                    bt7.Enabled = false;
-                    bt8.Enabled = false;
-
-                    res1.Enabled = false;
-                    res2.Enabled = false;
-                    res3.Enabled = false;
-                    res4.Enabled = false;
-
+                    }
                 }
-
-                else
-                {
-                    MessageBox.Show("Preencha todos os espaços da matriz.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    calcular.Checked = false;
-                }
-
 
             }
 
@@ -528,69 +477,161 @@ namespace Jogo_Hamilton
             limpar.Checked = false;
         }
 
-        public void CreateMatriz() {
-                           
-            linhas = Convert.ToInt32(primeiro.Text);
-            colunas = Convert.ToInt32(segundo.Text);
-            textBoxes = new TextBox[linhas, colunas];
-            textboxesResults = new TextBox[linhas, colunas];
+       public void CreateMatriz(int quantidade, int posicaoMatriz1 , bool transposta)
+       {
+             this.quantidade = quantidade;
+           
 
-                for (int n = 0; n < linhas; n++)
-                {
+           linhas = Convert.ToInt32(primeiro.Text);
+           colunas = Convert.ToInt32(segundo.Text);
+           textBoxes = new TextBox[linhas, colunas];
+           textBoxes2 = new TextBox[linhas, colunas];
+           if (transposta == false)
+           {
+               textboxesResults = new TextBox[linhas, colunas];
+           }
+           else {
 
-                    for (int m = 0; m < colunas; m++)
-                    {
-                        if (contadorDeColunas == colunas)
-                        {
-                            espacoIntervaloY += textBoxSize;
-                            espacoIntervaloX = 0;
-                            contadorDeColunas = 0;
-                        }
+               textboxesResults = new TextBox[colunas, linhas];
+               Console.WriteLine("criou uma transposta");
+           }
+           
+           for (int i = 0; i <= quantidade; i++)
+           {
 
-                        textBoxes[n, m] = new TextBox();
-                        textBoxes[n, m].SetBounds(300 + espacoIntervaloX, 200 + espacoIntervaloY, textBoxSize, textBoxSize);
-                        textboxesResults[n, m] = new TextBox();
-                        textboxesResults[n, m].SetBounds(363 + espacoIntervaloX, 313 + espacoIntervaloY, textBoxSize, textBoxSize);
+               Console.WriteLine("foii");
+               if (i == 1 && transposta == false)
+               {
+                   for (int n = 0; n < linhas; n++)
+                   {
+                       for (int m = 0; m < colunas; m++)
+                       {
+                           if (contadorDeColunas == colunas)
+                           {
+                               espacoIntervaloY += textBoxSize;                              
+                               espacoIntervaloX = 0;
+                               contadorDeColunas = 0;
+                           }
 
 
-                        textBoxes[n, m].TextChanged += new EventHandler(primeiro_TextChanged);
-                        Controls.Add(textBoxes[n, m]);
-                        textboxesResults[n, m].TextChanged += new EventHandler(primeiro_TextChanged);
-                        Controls.Add(textboxesResults[n, m]);
+                           textBoxes[n, m] = new TextBox();
+                           textBoxes[n, m].SetBounds(posicaoMatriz1 + espacoIntervaloX, 200 + espacoIntervaloY, textBoxSize, textBoxSize);
+                           textboxesResults[n, m] = new TextBox();
+                           textboxesResults[n, m].SetBounds(363 + espacoIntervaloX, 313 + espacoIntervaloY, textBoxSize, textBoxSize);
 
-                        textboxesResults[n, m].Visible = false;
-                        textboxesResults[n, m].Enabled = false;
+                           textBoxes[n, m].TextChanged += new EventHandler(primeiro_TextChanged);
+                           Controls.Add(textBoxes[n, m]);
+                           textboxesResults[n, m].TextChanged += new EventHandler(primeiro_TextChanged);
+                           Controls.Add(textboxesResults[n, m]);
 
-                        espacoIntervaloX += textBoxSize;
-                        contadorDeColunas++;
+                           textboxesResults[n, m].Visible = false;
+                           textboxesResults[n, m].Enabled = false;
 
-                       
-                    }
-                    //else
-                    //{
-                    //    if(checkboxMudou)
-                    //    textBoxes = new TextBox[0,0];
-                    //    linhas = 0;
-                    //    colunas = 0;
-                    //}
-                }
-                Console.WriteLine("passou pelo criar matriz");
-               
-        }
+                           espacoIntervaloX += textBoxSize;
+                           contadorDeColunas++;
+                       }
 
-        public void CreateResultado(int liness, int columnss)
+                   }
+                   //mais.Left = posicaoMatriz1;
+                   espacoIntervaloY = -30;
+               }
+               if (i == 1 && transposta == true)
+               {
+                   for (int k = 0; k < linhas; k++)
+                   {
+                       for (int l = 0; l < colunas; l++)
+                       {
+                           if (contadorDeColunas == colunas)
+                           {
+                               espacoIntervaloY += textBoxSize;
+                               espacoIntervaloX = 0;
+                               contadorDeColunas = 0;
+                           }
+
+
+                           textBoxes[k, l] = new TextBox();
+                           textBoxes[k, l].SetBounds(posicaoMatriz1 + espacoIntervaloX, 200 + espacoIntervaloY, textBoxSize, textBoxSize);
+
+                           textboxesResults[k, l] = new TextBox();
+                           textboxesResults[k, l].SetBounds(363 + espacoIntervaloX, 313 + espacoIntervaloY, textBoxSize, textBoxSize);
+
+                           textBoxes[k, l].TextChanged += new EventHandler(primeiro_TextChanged);
+                           Controls.Add(textBoxes[k, l]);
+
+                           textboxesResults[k, l].TextChanged += new EventHandler(primeiro_TextChanged);
+                           Controls.Add(textboxesResults[k, l]);
+
+                           textboxesResults[k, l].Visible = true;
+                           textboxesResults[k, l].Enabled = true;
+
+                           espacoIntervaloX += textBoxSize;
+                           contadorDeColunas++;
+                       }
+
+                   }
+                   espacoIntervaloY = -30;
+               }
+               if (i == 2)
+               {
+                   for (int j = 0; j < linhas; j++)
+                   {
+                       for (int o = 0; o < colunas; o++)
+                       {
+                           if (contadorDeColunas == colunas)
+                           {
+                               espacoIntervaloY += textBoxSize;
+                               espacoIntervaloX = 0;
+                               contadorDeColunas = 0;
+                           }
+
+                           textBoxes2[j, o] = new TextBox();
+                           textBoxes2[j, o].SetBounds(posicaoMatriz1 + 200 + espacoIntervaloX, 200 + espacoIntervaloY, textBoxSize, textBoxSize);
+                          
+                           textBoxes2[j, o].TextChanged += new EventHandler(primeiro_TextChanged);
+                           Controls.Add(textBoxes2[j, o]);
+                           textboxesResults[j, o].TextChanged += new EventHandler(primeiro_TextChanged);
+                           Controls.Add(textboxesResults[j, o]);
+
+                           textboxesResults[j, o].Visible = false;
+                           textboxesResults[j, o].Enabled = false;
+
+                           espacoIntervaloX += textBoxSize;
+                           contadorDeColunas++;
+                       }
+
+                   }
+                   //else
+                   //{
+                   //    if(checkboxMudou)
+                   //    textBoxes = new TextBox[0,0];
+                   //    linhas = 0;
+                   //    colunas = 0;
+                   //}
+               }
+           }
+              
+                   Console.WriteLine("passou pelo criar matriz");
+           
+       }
+
+        public void CreateResultado()
         {
-
             switch (Calculadora.currentMatriz)
             { 
                 case MATRIZES.MATRIZ_SOMA:
                     // VAI RANDOMIZAR DUAS MATRIZES + O RESULTADO
-
+                    //label.Text = "+";
+                    //label.ForeColor = Color.DodgerBlue;
+                    //label.Size.Width = 36;
+                    //label.Size.Height = 37;
+                    
+                    CreateMatriz(2, 360, false);
+                    
                     break;
 
                 case MATRIZES.MATRIZ_MENOS:
                     // VAI RANDOMIZAR DUAS MATRIZES + O RESULTADO
-
+                    CreateMatriz(2, 360, false);
                     break;
 
                 case MATRIZES.MATRIZ_VEZES:
@@ -600,10 +641,12 @@ namespace Jogo_Hamilton
 
                 case MATRIZES.MATRIZ_NUMERAL:
                     // UMA SÓ + UM TEXTbOX + RESULTADO
+                    CreateMatriz(1, 360, false);
                     break;
 
                 case MATRIZES.MATRIZ_TRANSPOSTA:
                     // UMA E O RESULTADO
+                    CreateMatriz(1, 360, true);
 
                     break;
 
@@ -627,10 +670,10 @@ namespace Jogo_Hamilton
         }
 
         
-        public int quantidadeDeMatrizes(int quantidade) {
+        //public int quantidadeDeMatrizes(int quantidade) {
 
-            return quantidade;
-        }
+        //    return quantidade;
+        //}
 
         private void matrizNumeral_CheckedChanged(object sender, EventArgs e)
         {
