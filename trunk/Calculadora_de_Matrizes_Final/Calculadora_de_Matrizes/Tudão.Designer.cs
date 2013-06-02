@@ -555,7 +555,7 @@
             this.primeiro.Name = "primeiro";
             this.primeiro.Size = new System.Drawing.Size(43, 20);
             this.primeiro.TabIndex = 101;
-            this.primeiro.Visible = false;            
+            this.primeiro.Visible = false;
             // 
             // segundo
             // 
