@@ -646,7 +646,7 @@ namespace Jogo_Hamilton
                 Determinante.Enabled = false;
                 criar.Enabled = true;
                 limpar.Enabled = true;
-                bt9.Enabled = false;
+               // bt9.Enabled = false;
 
                 matrizInversa.Enabled = false;
 
