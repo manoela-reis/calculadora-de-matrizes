@@ -20,7 +20,7 @@ namespace Jogo_Hamilton
         private int textBoxSize = 30;
         private int contadorDeColunas = 0;
         private bool checkboxMudou = true;
-        private int[,] textboxesResults;
+        private TextBox[,] textboxesResults;
 
          static private MATRIZES currentMatriz;
 
@@ -123,63 +123,14 @@ namespace Jogo_Hamilton
         private void limpar_CheckedChanged(object sender, EventArgs e)
         {
             Clear();
-
-            //bt1.Visible = false;
-            //bt2.Visible = false;
-            //bt3.Visible = false;
-            //bt4.Visible = false;
-            //bt5.Visible = false;
-            //bt6.Visible = false;
-            //bt7.Visible = false;
-            //bt8.Visible = false;
-            bt9.Visible = false;
-            //bt10.Visible = false;
-            //bt11.Visible = false;
-            //textBox2.Visible = false;
-            //textBox4.Visible = false;
-            //textBox3.Visible = false;
-            //bt8.Visible = false;
-            //textBox9.Visible = false;
-            //textBox8.Visible = false;
-            //textBox7.Visible = false;
-            //textBox6.Visible = false;
-
-            //bt1.Text = "";
-            //bt2.Text = "";
-            //bt3.Text = "";
-            //bt4.Text = "";
-            //bt5.Text = "";
-            //bt6.Text = "";
-            //bt7.Text = "";
-            //bt8.Text = "";
-            bt9.Text = "";
-            //bt10.Text = "";
-            //bt11.Text = "";
-            //textBox2.Text = "";
-            //textBox4.Text = "";
-            //textBox3.Text = "";
-            //bt8.Text = "";
-            //textBox9.Text = "";
-            //textBox8.Text = "";
-            //textBox7.Text = "";
-            //textBox6.Text = "";
-
-            //res1.Visible = false;
-            //res2.Visible = false;
-            //res3.Visible = false;
-            //res4.Visible = false;
-            //res5.Visible = false;
-
-            //res1.Text = "";
-            //res2.Text = "";
-            //res3.Text = "";
-            //res4.Text = "";
-            //res5.Text = "";
-
         }
 
         private void calcular_CheckedChanged(object sender, EventArgs e)
         {
+            calcular.Checked = false;
+            calcular.Enabled = false;            
+            criar.Enabled = false;
+
             //Soma
             if (matrizSoma.Checked == true && criar.Checked == true)
             {
@@ -326,35 +277,12 @@ namespace Jogo_Hamilton
                 {
                     for (int j = 0; j < colunas; j++)
                     {
-                        if (textBoxes[i, j].Text != "")
+                        if (textBoxes[i, j].Text != "" | bt9.Text != "")
                         {
-
                             Double tempres1 = Convert.ToDouble(textBoxes[i,j].Text) * Convert.ToDouble(bt9.Text);
-                            //Double tempres2 = Convert.ToDouble(bt2.Text) * Convert.ToDouble(bt9.Text);
-                            //Double tempres3 = Convert.ToDouble(bt3.Text) * Convert.ToDouble(bt9.Text);
-                            //Double tempres4 = Convert.ToDouble(bt4.Text) * Convert.ToDouble(bt9.Text);
-
-                            res1.Visible = true;
-                            res2.Visible = true;
-                            res3.Visible = true;
-                            res4.Visible = true;
-
-                            res1.Text = tempres1.ToString();
-                            //res2.Text = tempres2.ToString();
-                            //res3.Text = tempres3.ToString();
-                            //res4.Text = tempres4.ToString();
-
-                            bt1.Enabled = false;
-                            bt2.Enabled = false;
-                            bt3.Enabled = false;
-                            bt4.Enabled = false;
-                            bt9.Enabled = false;
-
-                            res1.Enabled = false;
-                            res2.Enabled = false;
-                            res3.Enabled = false;
-                            res4.Enabled = false;
-
+                            
+                            textboxesResults[i, j].Visible = true;
+                            textboxesResults[i, j].Text = tempres1.ToString();
                         }
 
                         else
@@ -554,12 +482,16 @@ namespace Jogo_Hamilton
                 {
                     textBoxes[i, w].Text = "";
                     textBoxes[i, w].Enabled = false;
+                    textboxesResults[i, w].Text = "";
+                    textboxesResults[i, w].Enabled = false;
+
                     //textBoxes[i, w].Visible = false; // não funciona, ou funciona 1 vez só'
                     Console.WriteLine("ENTROU NO LIMPAR");
                 }
             }
             primeiro.Text = "";
             segundo.Text = "";
+            bt9.Text = "";
             primeiro.Visible = false;
             segundo.Visible = false;
             criar.Checked = false;
@@ -572,6 +504,7 @@ namespace Jogo_Hamilton
             multiplicacao.Visible = false;
             igual.Visible = false;
             igual2.Visible = false;
+            bt9.Visible = false;
 
             matrizSoma.Checked = false;
             matrizMenos.Checked = false;
@@ -599,7 +532,8 @@ namespace Jogo_Hamilton
                            
             linhas = Convert.ToInt32(primeiro.Text);
             colunas = Convert.ToInt32(segundo.Text);
-            textBoxes = new TextBox[linhas, colunas]; 
+            textBoxes = new TextBox[linhas, colunas];
+            textboxesResults = new TextBox[linhas, colunas];
 
                 for (int n = 0; n < linhas; n++)
                 {
@@ -614,11 +548,19 @@ namespace Jogo_Hamilton
                         }
 
                         textBoxes[n, m] = new TextBox();
-                        textBoxes[n, m].SetBounds(0 + espacoIntervaloX, 0 + espacoIntervaloY, textBoxSize, textBoxSize);
+                        textBoxes[n, m].SetBounds(300 + espacoIntervaloX, 200 + espacoIntervaloY, textBoxSize, textBoxSize);
+                        textboxesResults[n, m] = new TextBox();
+                        textboxesResults[n, m].SetBounds(363 + espacoIntervaloX, 313 + espacoIntervaloY, textBoxSize, textBoxSize);
 
 
                         textBoxes[n, m].TextChanged += new EventHandler(primeiro_TextChanged);
                         Controls.Add(textBoxes[n, m]);
+                        textboxesResults[n, m].TextChanged += new EventHandler(primeiro_TextChanged);
+                        Controls.Add(textboxesResults[n, m]);
+
+                        textboxesResults[n, m].Visible = false;
+                        textboxesResults[n, m].Enabled = false;
+
                         espacoIntervaloX += textBoxSize;
                         contadorDeColunas++;
 
@@ -704,13 +646,10 @@ namespace Jogo_Hamilton
                 Determinante.Enabled = false;
                 criar.Enabled = true;
                 limpar.Enabled = true;
+                bt9.Enabled = false;
 
                 matrizInversa.Enabled = false;
 
-                //bt1.Visible = true;
-                //bt2.Visible = true;
-                //bt3.Visible = true;
-                //bt4.Visible = true;
                 bt9.Visible = true;
 
                 primeiro.Visible = true;
@@ -719,15 +658,6 @@ namespace Jogo_Hamilton
 
                 primeiro.Enabled = true;
                 segundo.Enabled = true;
-                //bt1.Enabled = true;
-                //bt2.Enabled = true;
-                //bt3.Enabled = true;
-                //bt4.Enabled = true;
-                //bt5.Enabled = true;
-                //bt6.Enabled = true;
-                //bt7.Enabled = true;
-                //bt8.Enabled = true;
-
         }
 
         private void matrizSoma_CheckedChanged(object sender, EventArgs e)
