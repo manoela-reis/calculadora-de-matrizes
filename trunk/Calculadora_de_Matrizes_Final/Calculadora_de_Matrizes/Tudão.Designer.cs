@@ -43,39 +43,24 @@
             this.limpar = new System.Windows.Forms.CheckBox();
             this.menos = new System.Windows.Forms.Label();
             this.multiplicacao = new System.Windows.Forms.Label();
-            this.igual = new System.Windows.Forms.Label();
             this.igual2 = new System.Windows.Forms.Label();
             this.matrizOposta = new System.Windows.Forms.CheckBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.bt8 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.matrizInversa = new System.Windows.Forms.CheckBox();
-            this.bt1 = new System.Windows.Forms.TextBox();
-            this.bt3 = new System.Windows.Forms.TextBox();
-            this.bt2 = new System.Windows.Forms.TextBox();
-            this.bt4 = new System.Windows.Forms.TextBox();
             this.bt10 = new System.Windows.Forms.TextBox();
-            this.bt11 = new System.Windows.Forms.TextBox();
-            this.res1 = new System.Windows.Forms.TextBox();
-            this.res2 = new System.Windows.Forms.TextBox();
-            this.res3 = new System.Windows.Forms.TextBox();
-            this.res4 = new System.Windows.Forms.TextBox();
-            this.bt9 = new System.Windows.Forms.TextBox();
-            this.bt7 = new System.Windows.Forms.TextBox();
-            this.bt5 = new System.Windows.Forms.TextBox();
-            this.bt6 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.res5 = new System.Windows.Forms.TextBox();
             this.primeiro = new System.Windows.Forms.MaskedTextBox();
             this.segundo = new System.Windows.Forms.MaskedTextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.deter2x2 = new System.Windows.Forms.RadioButton();
+            this.deter3x3 = new System.Windows.Forms.RadioButton();
+            this.bt4 = new System.Windows.Forms.TextBox();
+            this.bt1 = new System.Windows.Forms.TextBox();
+            this.bt5 = new System.Windows.Forms.TextBox();
+            this.bt2 = new System.Windows.Forms.TextBox();
+            this.bt8 = new System.Windows.Forms.TextBox();
+            this.bt7 = new System.Windows.Forms.TextBox();
+            this.bt3 = new System.Windows.Forms.TextBox();
+            this.bt6 = new System.Windows.Forms.TextBox();
+            this.bt9 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // matrizMenos
@@ -267,19 +252,6 @@
             this.multiplicacao.Text = "x";
             this.multiplicacao.Visible = false;
             // 
-            // igual
-            // 
-            this.igual.AutoSize = true;
-            this.igual.BackColor = System.Drawing.Color.Transparent;
-            this.igual.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.igual.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.igual.Location = new System.Drawing.Point(495, 205);
-            this.igual.Name = "igual";
-            this.igual.Size = new System.Drawing.Size(36, 37);
-            this.igual.TabIndex = 53;
-            this.igual.Text = "=";
-            this.igual.Visible = false;
-            // 
             // igual2
             // 
             this.igual2.AutoSize = true;
@@ -315,81 +287,6 @@
             this.textBox1.Size = new System.Drawing.Size(0, 20);
             this.textBox1.TabIndex = 75;
             // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(484, 182);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(60, 38);
-            this.textBox2.TabIndex = 76;
-            this.textBox2.Visible = false;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(484, 237);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(60, 38);
-            this.textBox4.TabIndex = 77;
-            this.textBox4.Visible = false;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(556, 182);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(60, 38);
-            this.textBox3.TabIndex = 78;
-            this.textBox3.Visible = false;
-            // 
-            // bt8
-            // 
-            this.bt8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt8.Location = new System.Drawing.Point(555, 237);
-            this.bt8.Name = "bt8";
-            this.bt8.Size = new System.Drawing.Size(60, 38);
-            this.bt8.TabIndex = 79;
-            this.bt8.Visible = false;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(442, 367);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(60, 38);
-            this.textBox6.TabIndex = 83;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox6.Visible = false;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(442, 313);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(60, 38);
-            this.textBox7.TabIndex = 82;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox7.Visible = false;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(370, 367);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(60, 38);
-            this.textBox8.TabIndex = 81;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox8.Visible = false;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(370, 313);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(60, 38);
-            this.textBox9.TabIndex = 80;
-            this.textBox9.Visible = false;
-            // 
             // matrizInversa
             // 
             this.matrizInversa.AutoSize = true;
@@ -404,153 +301,14 @@
             this.matrizInversa.UseVisualStyleBackColor = false;
             this.matrizInversa.CheckedChanged += new System.EventHandler(this.matrizInversa_CheckedChanged);
             // 
-            // bt1
-            // 
-            this.bt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt1.Location = new System.Drawing.Point(287, 182);
-            this.bt1.Name = "bt1";
-            this.bt1.Size = new System.Drawing.Size(60, 38);
-            this.bt1.TabIndex = 85;
-            this.bt1.Visible = false;
-            // 
-            // bt3
-            // 
-            this.bt3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt3.Location = new System.Drawing.Point(286, 236);
-            this.bt3.Name = "bt3";
-            this.bt3.Size = new System.Drawing.Size(60, 38);
-            this.bt3.TabIndex = 86;
-            this.bt3.Visible = false;
-            // 
-            // bt2
-            // 
-            this.bt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt2.Location = new System.Drawing.Point(363, 182);
-            this.bt2.Name = "bt2";
-            this.bt2.Size = new System.Drawing.Size(60, 38);
-            this.bt2.TabIndex = 87;
-            this.bt2.Visible = false;
-            // 
-            // bt4
-            // 
-            this.bt4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt4.Location = new System.Drawing.Point(363, 236);
-            this.bt4.Name = "bt4";
-            this.bt4.Size = new System.Drawing.Size(60, 38);
-            this.bt4.TabIndex = 88;
-            this.bt4.Visible = false;
-            // 
             // bt10
             // 
             this.bt10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt10.Location = new System.Drawing.Point(429, 178);
+            this.bt10.Location = new System.Drawing.Point(472, 201);
             this.bt10.Name = "bt10";
             this.bt10.Size = new System.Drawing.Size(60, 38);
-            this.bt10.TabIndex = 89;
+            this.bt10.TabIndex = 95;
             this.bt10.Visible = false;
-            // 
-            // bt11
-            // 
-            this.bt11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt11.Location = new System.Drawing.Point(429, 237);
-            this.bt11.Name = "bt11";
-            this.bt11.Size = new System.Drawing.Size(60, 38);
-            this.bt11.TabIndex = 90;
-            this.bt11.Visible = false;
-            // 
-            // res1
-            // 
-            this.res1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.res1.Location = new System.Drawing.Point(363, 313);
-            this.res1.Name = "res1";
-            this.res1.Size = new System.Drawing.Size(60, 38);
-            this.res1.TabIndex = 91;
-            this.res1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.res1.Visible = false;
-            // 
-            // res2
-            // 
-            this.res2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.res2.Location = new System.Drawing.Point(446, 313);
-            this.res2.Name = "res2";
-            this.res2.Size = new System.Drawing.Size(60, 38);
-            this.res2.TabIndex = 92;
-            this.res2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.res2.Visible = false;
-            // 
-            // res3
-            // 
-            this.res3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.res3.Location = new System.Drawing.Point(363, 360);
-            this.res3.Name = "res3";
-            this.res3.Size = new System.Drawing.Size(60, 38);
-            this.res3.TabIndex = 93;
-            this.res3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.res3.Visible = false;
-            // 
-            // res4
-            // 
-            this.res4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.res4.Location = new System.Drawing.Point(450, 360);
-            this.res4.Name = "res4";
-            this.res4.Size = new System.Drawing.Size(60, 38);
-            this.res4.TabIndex = 94;
-            this.res4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.res4.Visible = false;
-            // 
-            // bt9
-            // 
-            this.bt9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt9.Location = new System.Drawing.Point(485, 213);
-            this.bt9.Name = "bt9";
-            this.bt9.Size = new System.Drawing.Size(60, 38);
-            this.bt9.TabIndex = 95;
-            this.bt9.Visible = false;
-            // 
-            // bt7
-            // 
-            this.bt7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt7.Location = new System.Drawing.Point(485, 237);
-            this.bt7.Name = "bt7";
-            this.bt7.Size = new System.Drawing.Size(60, 38);
-            this.bt7.TabIndex = 96;
-            this.bt7.Visible = false;
-            // 
-            // bt5
-            // 
-            this.bt5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt5.Location = new System.Drawing.Point(481, 182);
-            this.bt5.Name = "bt5";
-            this.bt5.Size = new System.Drawing.Size(60, 38);
-            this.bt5.TabIndex = 97;
-            this.bt5.Visible = false;
-            // 
-            // bt6
-            // 
-            this.bt6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt6.Location = new System.Drawing.Point(549, 182);
-            this.bt6.Name = "bt6";
-            this.bt6.Size = new System.Drawing.Size(60, 38);
-            this.bt6.TabIndex = 98;
-            this.bt6.Visible = false;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(550, 236);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(60, 38);
-            this.textBox10.TabIndex = 99;
-            this.textBox10.Visible = false;
-            // 
-            // res5
-            // 
-            this.res5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.res5.Location = new System.Drawing.Point(556, 212);
-            this.res5.Name = "res5";
-            this.res5.Size = new System.Drawing.Size(60, 38);
-            this.res5.TabIndex = 100;
-            this.res5.Visible = false;
             // 
             // primeiro
             // 
@@ -568,29 +326,110 @@
             this.segundo.TabIndex = 102;
             this.segundo.Visible = false;
             // 
-            // radioButton1
+            // deter2x2
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(261, 412);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(42, 17);
-            this.radioButton1.TabIndex = 103;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "2x2";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.Visible = false;
+            this.deter2x2.AutoSize = true;
+            this.deter2x2.Location = new System.Drawing.Point(261, 412);
+            this.deter2x2.Name = "deter2x2";
+            this.deter2x2.Size = new System.Drawing.Size(42, 17);
+            this.deter2x2.TabIndex = 103;
+            this.deter2x2.TabStop = true;
+            this.deter2x2.Text = "2x2";
+            this.deter2x2.UseVisualStyleBackColor = true;
+            this.deter2x2.Visible = false;
             // 
-            // radioButton2
+            // deter3x3
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(352, 411);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(42, 17);
-            this.radioButton2.TabIndex = 104;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "3x3";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.Visible = false;
+            this.deter3x3.AutoSize = true;
+            this.deter3x3.Location = new System.Drawing.Point(352, 411);
+            this.deter3x3.Name = "deter3x3";
+            this.deter3x3.Size = new System.Drawing.Size(42, 17);
+            this.deter3x3.TabIndex = 104;
+            this.deter3x3.TabStop = true;
+            this.deter3x3.Text = "3x3";
+            this.deter3x3.UseVisualStyleBackColor = true;
+            this.deter3x3.Visible = false;
+            // 
+            // bt4
+            // 
+            this.bt4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt4.Location = new System.Drawing.Point(261, 230);
+            this.bt4.Name = "bt4";
+            this.bt4.Size = new System.Drawing.Size(60, 38);
+            this.bt4.TabIndex = 105;
+            this.bt4.Visible = false;
+            // 
+            // bt1
+            // 
+            this.bt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt1.Location = new System.Drawing.Point(261, 178);
+            this.bt1.Name = "bt1";
+            this.bt1.Size = new System.Drawing.Size(60, 38);
+            this.bt1.TabIndex = 106;
+            this.bt1.Visible = false;
+            // 
+            // bt5
+            // 
+            this.bt5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt5.Location = new System.Drawing.Point(327, 230);
+            this.bt5.Name = "bt5";
+            this.bt5.Size = new System.Drawing.Size(60, 38);
+            this.bt5.TabIndex = 107;
+            this.bt5.Visible = false;
+            // 
+            // bt2
+            // 
+            this.bt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt2.Location = new System.Drawing.Point(327, 178);
+            this.bt2.Name = "bt2";
+            this.bt2.Size = new System.Drawing.Size(60, 38);
+            this.bt2.TabIndex = 108;
+            this.bt2.Visible = false;
+            // 
+            // bt8
+            // 
+            this.bt8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt8.Location = new System.Drawing.Point(327, 274);
+            this.bt8.Name = "bt8";
+            this.bt8.Size = new System.Drawing.Size(60, 38);
+            this.bt8.TabIndex = 110;
+            this.bt8.Visible = false;
+            // 
+            // bt7
+            // 
+            this.bt7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt7.Location = new System.Drawing.Point(261, 274);
+            this.bt7.Name = "bt7";
+            this.bt7.Size = new System.Drawing.Size(60, 38);
+            this.bt7.TabIndex = 109;
+            this.bt7.Visible = false;
+            // 
+            // bt3
+            // 
+            this.bt3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt3.Location = new System.Drawing.Point(393, 178);
+            this.bt3.Name = "bt3";
+            this.bt3.Size = new System.Drawing.Size(60, 38);
+            this.bt3.TabIndex = 112;
+            this.bt3.Visible = false;
+            // 
+            // bt6
+            // 
+            this.bt6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt6.Location = new System.Drawing.Point(393, 230);
+            this.bt6.Name = "bt6";
+            this.bt6.Size = new System.Drawing.Size(60, 38);
+            this.bt6.TabIndex = 111;
+            this.bt6.Visible = false;
+            // 
+            // bt9
+            // 
+            this.bt9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt9.Location = new System.Drawing.Point(393, 274);
+            this.bt9.Name = "bt9";
+            this.bt9.Size = new System.Drawing.Size(60, 38);
+            this.bt9.TabIndex = 113;
+            this.bt9.Visible = false;
             // 
             // Calculadora
             // 
@@ -600,39 +439,24 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(682, 496);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.bt9);
+            this.Controls.Add(this.bt3);
+            this.Controls.Add(this.bt6);
+            this.Controls.Add(this.bt8);
+            this.Controls.Add(this.bt7);
+            this.Controls.Add(this.bt2);
+            this.Controls.Add(this.bt5);
+            this.Controls.Add(this.bt1);
+            this.Controls.Add(this.bt4);
+            this.Controls.Add(this.deter3x3);
+            this.Controls.Add(this.deter2x2);
             this.Controls.Add(this.segundo);
             this.Controls.Add(this.primeiro);
-            this.Controls.Add(this.res5);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.bt6);
-            this.Controls.Add(this.bt5);
-            this.Controls.Add(this.bt7);
-            this.Controls.Add(this.bt9);
-            this.Controls.Add(this.res4);
-            this.Controls.Add(this.res3);
-            this.Controls.Add(this.res2);
-            this.Controls.Add(this.res1);
-            this.Controls.Add(this.bt11);
             this.Controls.Add(this.bt10);
-            this.Controls.Add(this.bt4);
-            this.Controls.Add(this.bt2);
-            this.Controls.Add(this.bt3);
-            this.Controls.Add(this.bt1);
             this.Controls.Add(this.matrizInversa);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.bt8);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.matrizOposta);
             this.Controls.Add(this.igual2);
-            this.Controls.Add(this.igual);
             this.Controls.Add(this.multiplicacao);
             this.Controls.Add(this.menos);
             this.Controls.Add(this.limpar);
@@ -670,39 +494,24 @@
         private System.Windows.Forms.CheckBox limpar;
         private System.Windows.Forms.Label menos;
         private System.Windows.Forms.Label multiplicacao;
-        private System.Windows.Forms.Label igual;
         private System.Windows.Forms.Label igual2;
         private System.Windows.Forms.CheckBox matrizOposta;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox bt8;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.CheckBox matrizInversa;
-        private System.Windows.Forms.TextBox bt1;
-        private System.Windows.Forms.TextBox bt3;
-        private System.Windows.Forms.TextBox bt2;
-        private System.Windows.Forms.TextBox bt4;
         private System.Windows.Forms.TextBox bt10;
-        private System.Windows.Forms.TextBox bt11;
-        private System.Windows.Forms.TextBox res1;
-        private System.Windows.Forms.TextBox res2;
-        private System.Windows.Forms.TextBox res3;
-        private System.Windows.Forms.TextBox res4;
-        private System.Windows.Forms.TextBox bt9;
-        private System.Windows.Forms.TextBox bt7;
-        private System.Windows.Forms.TextBox bt5;
-        private System.Windows.Forms.TextBox bt6;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox res5;
         private System.Windows.Forms.MaskedTextBox primeiro;
         private System.Windows.Forms.MaskedTextBox segundo;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton deter2x2;
+        private System.Windows.Forms.RadioButton deter3x3;
+        private System.Windows.Forms.TextBox bt4;
+        private System.Windows.Forms.TextBox bt1;
+        private System.Windows.Forms.TextBox bt5;
+        private System.Windows.Forms.TextBox bt2;
+        private System.Windows.Forms.TextBox bt8;
+        private System.Windows.Forms.TextBox bt7;
+        private System.Windows.Forms.TextBox bt3;
+        private System.Windows.Forms.TextBox bt6;
+        private System.Windows.Forms.TextBox bt9;
     }
 }
 
