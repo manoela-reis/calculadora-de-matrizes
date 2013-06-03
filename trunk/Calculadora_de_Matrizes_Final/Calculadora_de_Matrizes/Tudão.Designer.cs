@@ -74,6 +74,8 @@
             this.res5 = new System.Windows.Forms.TextBox();
             this.primeiro = new System.Windows.Forms.MaskedTextBox();
             this.segundo = new System.Windows.Forms.MaskedTextBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // matrizMenos
@@ -170,6 +172,7 @@
             this.Determinante.TabIndex = 11;
             this.Determinante.Text = "Determinante";
             this.Determinante.UseVisualStyleBackColor = false;
+            this.Determinante.CheckedChanged += new System.EventHandler(this.Determinante_CheckedChanged);
             // 
             // criar
             // 
@@ -565,6 +568,30 @@
             this.segundo.TabIndex = 102;
             this.segundo.Visible = false;
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(261, 412);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(42, 17);
+            this.radioButton1.TabIndex = 103;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "2x2";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.Visible = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(352, 411);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(42, 17);
+            this.radioButton2.TabIndex = 104;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "3x3";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.Visible = false;
+            // 
             // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -573,6 +600,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(682, 496);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.segundo);
             this.Controls.Add(this.primeiro);
             this.Controls.Add(this.res5);
@@ -672,6 +701,8 @@
         private System.Windows.Forms.TextBox res5;
         private System.Windows.Forms.MaskedTextBox primeiro;
         private System.Windows.Forms.MaskedTextBox segundo;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
     }
 }
 

@@ -97,36 +97,6 @@ namespace Jogo_Hamilton
 
                         }
 
-            
-
-            // Determinante
-            if (Determinante.Checked == true)
-            {
-                matrizNumeral.Enabled = false;
-                matrizMenos.Enabled = false;
-                matrizSoma.Enabled = false;
-                matrizOposta.Enabled = false;
-                matrizTransposta.Enabled = false;
-                matrizVezes.Enabled = false;
-                Determinante.Enabled = false;
-                criar.Enabled = false;
-                matrizInversa.Enabled = false;
-
-                bt2.Visible = true;
-                bt4.Visible = true;
-                bt11.Visible = true;
-                bt10.Visible = true;
-
-                bt1.Enabled = true;
-                bt2.Enabled = true;
-                bt3.Enabled = true;
-                bt4.Enabled = true;
-                bt5.Enabled = true;
-                bt6.Enabled = true;
-                bt7.Enabled = true;
-                bt8.Enabled = true;
-            }
-            
         }
 
         private void limpar_CheckedChanged(object sender, EventArgs e)
@@ -290,66 +260,56 @@ namespace Jogo_Hamilton
             // Oposta
             if (matrizOposta.Checked == true && criar.Checked == true)
             {
-                if (bt1.Text != "" && bt2.Text != "" && bt3.Text != "" && bt4.Text != "")
+                for (int i = 0; i < linhas; i++)
                 {
-                    textBox2.Visible = true;
-                    textBox4.Visible = true;
-                    textBox3.Visible = true;
-                    bt8.Visible = true;
-                    igual2.Visible = true;
+                    for (int j = 0; j < colunas; j++)
+                    {
+                        if (textBoxes[i, j].Text != "")
+                        {
+                            Double tempres1 = Convert.ToDouble(textBoxes[i, j].Text);
 
-                    Double tempres1 = -Convert.ToDouble(bt1.Text);
-                    Double tempres2 = -Convert.ToDouble(bt2.Text);
-                    Double tempres3 = -Convert.ToDouble(bt3.Text);
-                    Double tempres4 = -Convert.ToDouble(bt4.Text);
+                            textboxesResults[i, j].Visible = true;
+                            textboxesResults[i, j].Text = "-" + tempres1.ToString();
+                        }
 
-                   textBox2.Text = tempres1.ToString();
-                   textBox4.Text = tempres3.ToString();
-                   textBox3.Text = tempres2.ToString();
-                   bt8.Text = tempres4.ToString();
-                   calcular.Checked = false;
+                        else
+                        {
+                            MessageBox.Show("Preencha todos os espaços da matriz.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            calcular.Checked = false;
+                        }
 
-                    textBox2.Enabled = false;
-                    textBox4.Enabled = false;
-                    textBox3.Enabled = false;
-                    bt8.Enabled = false;
-
-                   
+                    }
                 }
-
-                else
-                {
-                    MessageBox.Show("Preencha todos os espaços da matriz.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    calcular.Checked = false;
-                }
-
 
             }
 
             // Determinante
             if (Determinante.Checked == true && criar.Checked == true)
             {
-                if (bt2.Text != "" && bt4.Text != "" && bt10.Text != "" && bt11.Text != "")
+                if (radioButton1.Checked == true && radioButton2.Checked == false)
                 {
+                    if (bt2.Text != "" && bt4.Text != "" && bt10.Text != "" && bt11.Text != "")
+                    {
 
-                    Double tempres1 = Convert.ToDouble(bt2.Text) * Convert.ToDouble(bt11.Text) - Convert.ToDouble(bt4.Text) * Convert.ToDouble(bt10.Text);
+                        Double tempres1 = Convert.ToDouble(bt2.Text) * Convert.ToDouble(bt11.Text) - Convert.ToDouble(bt4.Text) * Convert.ToDouble(bt10.Text);
 
-                    res5.Visible = true;
-                    igual.Visible = true;
-                    res5.Text = tempres1.ToString();
+                        res5.Visible = true;
+                        igual.Visible = true;
+                        res5.Text = tempres1.ToString();
 
-                    bt2.Enabled = false;
-                    bt4.Enabled = false;
-                    bt10.Enabled = false;
-                    bt11.Enabled = false;
+                        bt2.Enabled = false;
+                        bt4.Enabled = false;
+                        bt10.Enabled = false;
+                        bt11.Enabled = false;
 
-                    res5.Enabled = false;
-                }
+                        res5.Enabled = false;
+                    }
 
-                else
-                {
-                    MessageBox.Show("Preencha todos os espaços da matriz.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    calcular.Checked = false;
+                    else
+                    {
+                        MessageBox.Show("Preencha todos os espaços da matriz.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        calcular.Checked = false;
+                    }
                 }
             }
 
@@ -652,6 +612,7 @@ namespace Jogo_Hamilton
 
                 case MATRIZES.MATRIZ_OPOSTA:
                     // UMA E O RESULTADO
+                    CreateMatriz(1, 360, false);
 
                     break;
 
@@ -668,12 +629,6 @@ namespace Jogo_Hamilton
 
 
         }
-
-        
-        //public int quantidadeDeMatrizes(int quantidade) {
-
-        //    return quantidade;
-        //}
 
         private void matrizNumeral_CheckedChanged(object sender, EventArgs e)
         {
@@ -720,13 +675,6 @@ namespace Jogo_Hamilton
                 
                 matrizInversa.Enabled = false;
 
-                //bt1.Enabled = true;
-                //bt2.Enabled = true;
-                //bt3.Enabled = true;
-                //bt4.Enabled = true;
-                //bt5.Enabled = true;
-                //bt6.Enabled = true;
-                //bt7.Enabled = true;
                 primeiro.Visible = true;
                 segundo.Visible = true;
                 mais.Visible = true;
@@ -734,20 +682,6 @@ namespace Jogo_Hamilton
                 primeiro.Enabled = true;
                 segundo.Enabled = true;
 
-
-                //bt1.Visible = true;
-                //bt2.Visible = true;
-                //bt3.Visible = true;
-                //bt4.Visible = true;
-                //bt5.Visible = true;
-                //bt6.Visible = true;
-                //bt7.Visible = true;
-                //bt8.Visible = true;
-                //bt9.Visible = false;
-                //bt10.Visible = false;
-                //bt11.Visible = false;
-            
-            
         }
 
         private void matrizMenos_CheckedChanged(object sender, EventArgs e)
@@ -766,33 +700,14 @@ namespace Jogo_Hamilton
                 matrizInversa.Enabled = false;
                 limpar.Enabled = true;
 
-                //bt1.Visible = true;
-                //bt2.Visible = true;
-                //bt3.Visible = true;
-                //bt4.Visible = true;
-                //bt5.Visible = true;
-                //bt6.Visible = true;
-                //bt7.Visible = true;
-                //bt8.Visible = true;
-                //bt9.Visible = false;
-                //bt10.Visible = false;
-                //bt11.Visible = false;               
+                           
                 primeiro.Visible = true;
                 segundo.Visible = true;
                 menos.Visible = true;
 
                 primeiro.Enabled = true;
                 segundo.Enabled = true;
-
-                //bt1.Enabled = true;
-                //bt2.Enabled = true;
-                //bt3.Enabled = true;
-                //bt4.Enabled = true;
-                //bt5.Enabled = true;
-                //bt6.Enabled = true;
-                //bt7.Enabled = true;
-                //bt8.Enabled = true;
-
+ 
         }
 
         private void matrizVezes_CheckedChanged(object sender, EventArgs e)
@@ -812,17 +727,7 @@ namespace Jogo_Hamilton
                 limpar.Enabled = true;
 
 
-                //bt1.Visible = true;
-                //bt2.Visible = true;
-                //bt3.Visible = true;
-                //bt4.Visible = true;
-                //bt5.Visible = true;
-                //bt6.Visible = true;
-                //bt7.Visible = true;
-                //bt8.Visible = true;
-                //bt9.Visible = false;
-                //bt10.Visible = false;
-                //bt11.Visible = false;
+                
                 primeiro.Visible = true;
                 segundo.Visible = true;
                 multiplicacao.Visible = true;
@@ -830,14 +735,7 @@ namespace Jogo_Hamilton
                 primeiro.Enabled = true;
                 segundo.Enabled = true;
                 
-                //bt1.Enabled = true;
-                //bt2.Enabled = true;
-                //bt3.Enabled = true;
-                //bt4.Enabled = true;
-                //bt5.Enabled = true;
-                //bt6.Enabled = true;
-                //bt7.Enabled = true;
-                //bt8.Enabled = true;
+                
         }
 
         private void matrizTransposta_CheckedChanged(object sender, EventArgs e)
@@ -855,10 +753,7 @@ namespace Jogo_Hamilton
                 criar.Enabled = true;
                 matrizInversa.Enabled = false;
                 limpar.Enabled = true;
-                //bt1.Visible = true;
-                //bt2.Visible = true;
-                //bt3.Visible = true;
-                //bt4.Visible = true;
+               
 
                 primeiro.Visible = true;
                 segundo.Visible = true;
@@ -866,14 +761,6 @@ namespace Jogo_Hamilton
                 primeiro.Enabled = true;
                 segundo.Enabled = true;
 
-                //bt1.Enabled = true;
-                //bt2.Enabled = true;
-                //bt3.Enabled = true;
-                //bt4.Enabled = true;
-                //bt5.Enabled = true;
-                //bt6.Enabled = true;
-                //bt7.Enabled = true;
-                //bt8.Enabled = true;
         }
 
         private void matrizOposta_CheckedChanged(object sender, EventArgs e)
@@ -891,12 +778,7 @@ namespace Jogo_Hamilton
                 criar.Enabled = true;
                 matrizInversa.Enabled = false;
                 limpar.Enabled = true;
-                //bt1.Visible = true;
-                //bt2.Visible = true;
-                //bt3.Visible = true;
-                //bt4.Visible = true;
-
-
+            
 
                 primeiro.Visible = true;
                 segundo.Visible = true;
@@ -904,14 +786,6 @@ namespace Jogo_Hamilton
                 primeiro.Enabled = true;
                 segundo.Enabled = true;
 
-                //bt1.Enabled = true;
-                //bt2.Enabled = true;
-                //bt3.Enabled = true;
-                //bt4.Enabled = true;
-                //bt5.Enabled = true;
-                //bt6.Enabled = true;
-                //bt7.Enabled = true;
-                //bt8.Enabled = true;
         }
 
         private void matrizInversa_CheckedChanged(object sender, EventArgs e)
@@ -929,21 +803,12 @@ namespace Jogo_Hamilton
                 limpar.Enabled = true;
                 matrizInversa.Enabled = false;
 
-                //bt1.Visible = true;
-                //bt2.Visible = true;
-                //bt3.Visible = true;
-                //bt4.Visible = true;
 
                 primeiro.Visible = true;
                 segundo.Visible = true;
 
                 primeiro.Enabled = true;
                 segundo.Enabled = true;
-
-                //bt1.Enabled = true;
-                //bt2.Enabled = true;
-                //bt3.Enabled = true;
-                //bt4.Enabled = true;
         }
 
         public enum MATRIZES { 
@@ -956,6 +821,36 @@ namespace Jogo_Hamilton
             MATRIZ_OPOSTA,
             MATRIZ_DETERMINANTE,
             MATRIZ_INVERSA
+        }
+
+        private void Determinante_CheckedChanged(object sender, EventArgs e)
+        {
+            Calculadora.currentMatriz = MATRIZES.MATRIZ_DETERMINANTE;
+            matrizNumeral.Enabled = false;
+            matrizMenos.Enabled = false;
+            matrizSoma.Enabled = false;
+            matrizOposta.Enabled = false;
+            matrizTransposta.Enabled = false;
+            matrizVezes.Enabled = false;
+            Determinante.Enabled = false;
+            criar.Enabled = true;
+            matrizInversa.Enabled = false;
+            radioButton1.Visible = true;
+            radioButton2.Visible = true;
+
+            bt2.Visible = true;
+            bt4.Visible = true;
+            bt11.Visible = true;
+            bt10.Visible = true;
+
+            bt1.Enabled = true;
+            bt2.Enabled = true;
+            bt3.Enabled = true;
+            bt4.Enabled = true;
+            bt5.Enabled = true;
+            bt6.Enabled = true;
+            bt7.Enabled = true;
+            bt8.Enabled = true;
         }
     }        
 }
