@@ -117,3 +117,16 @@ C:\Users\Manoela Barreto\Desktop\calculadora-de-matrizes\Calculadora_de_Matrizes
 C:\Users\Manoela Barreto\Desktop\calculadora-de-matrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Manoela Barreto\Desktop\calculadora-de-matrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\obj\x86\Debug\Calculadora_de_Matrizes.exe.manifest
 C:\Users\Manoela Barreto\Desktop\calculadora-de-matrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\obj\x86\Debug\Calculadora_de_Matrizes.application
+C:\Users\THYAGO\Desktop\HA\calculadora-de-matrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\obj\x86\Debug\Calculadora_de_Matrizes.exe
+C:\Users\THYAGO\Desktop\HA\calculadora-de-matrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\obj\x86\Debug\Calculadora_de_Matrizes.pdb
+C:\Users\THYAGO\Desktop\HA\calculadora-de-matrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\bin\Debug\Calculadora_de_Matrizes.exe.manifest
+C:\Users\THYAGO\Desktop\HA\calculadora-de-matrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\bin\Debug\Calculadora_de_Matrizes.application
+C:\Users\THYAGO\Desktop\HA\calculadora-de-matrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\bin\Debug\Calculadora_de_Matrizes.exe
+C:\Users\THYAGO\Desktop\HA\calculadora-de-matrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\bin\Debug\Calculadora_de_Matrizes.pdb
+C:\Users\THYAGO\Desktop\HA\calculadora-de-matrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\THYAGO\Desktop\HA\calculadora-de-matrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\obj\x86\Debug\Jogo_Hamilton.Properties.Resources.resources
+C:\Users\THYAGO\Desktop\HA\calculadora-de-matrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\obj\x86\Debug\Jogo_Hamilton.Calculadora.resources
+C:\Users\THYAGO\Desktop\HA\calculadora-de-matrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\THYAGO\Desktop\HA\calculadora-de-matrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\THYAGO\Desktop\HA\calculadora-de-matrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\obj\x86\Debug\Calculadora_de_Matrizes.exe.manifest
+C:\Users\THYAGO\Desktop\HA\calculadora-de-matrizes\Calculadora_de_Matrizes_Final\Calculadora_de_Matrizes\obj\x86\Debug\Calculadora_de_Matrizes.application
