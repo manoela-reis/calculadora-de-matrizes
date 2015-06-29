@@ -1,0 +1,1 @@
+Projeto desenvolvido no segundo ano do ensino médio para a aula de matemática, que agora será otimizado.
